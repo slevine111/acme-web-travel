@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "DATABASE_URL=postgres://localhost/acme-web-travel nodemon server.js"
+    "start:dev": "DATABASE_URL=postgres://localhost/acme-web-travel node server.js",
+    "start:appfile": "DATABASE_URL=postgres://localhost/acme-web-travel node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
     "pg": "^7.8.0",
